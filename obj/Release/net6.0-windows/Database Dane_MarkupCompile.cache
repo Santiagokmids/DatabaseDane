@@ -1,20 +1,20 @@
 ﻿Database Dane
-1.0.0.0
+
 
 winexe
 C#
 .cs
-D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\
+D:\Users\lumio\visual-workspace\BaseData\obj\Release\net6.0-windows\
 Database_Dane
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 D:\Users\lumio\visual-workspace\BaseData\App.xaml
 11407045341
 
-52119874481
+3-1233169557
 1941142463650
 MainWindow.xaml;
 
-False
+True
 
