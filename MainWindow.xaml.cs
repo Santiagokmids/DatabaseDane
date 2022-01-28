@@ -21,7 +21,7 @@ namespace Database_Dane
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {   
+    {
         public MainWindow()
         {
             InitializeComponent();
@@ -32,17 +32,11 @@ namespace Database_Dane
 
         }
 
-        private void Buscar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-          
         private void Importar_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.ShowDialog();
 
-            if (openFile.ShowDialog() == true) 
+           if (openFile.ShowDialog() == true) 
             {
                 string[] line = File.ReadAllLines(openFile.FileName);
                 List<Municipality> municipality = new List<Municipality>();
@@ -56,6 +50,11 @@ namespace Database_Dane
                 ListViewItem listView = new ListViewItem();
                 list.Items.Add(municipality);
             }
+        }
+
+        private void Buscar_Click(object sender, RoutedEventArgs e)
+        {
+          
         }
     }
 }
