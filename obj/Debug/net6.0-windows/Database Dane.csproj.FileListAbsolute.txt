@@ -1,0 +1,21 @@
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\Database Dane.exe
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\Database Dane.deps.json
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\Database Dane.runtimeconfig.json
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\Database Dane.dll
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\ref\Database Dane.dll
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\Database Dane.pdb
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.csproj.AssemblyReference.cache
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane_MarkupCompile.cache
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane_MarkupCompile.lref
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.g.resources
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.AssemblyInfoInputs.cache
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.AssemblyInfo.cs
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.dll
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\ref\Database Dane.dll
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.pdb
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.genruntimeconfig.cache
