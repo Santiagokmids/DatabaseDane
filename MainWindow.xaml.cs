@@ -21,7 +21,9 @@ namespace Database_Dane
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {   
+    {
+        List<Municipality> municipalityList = new List<Municipality>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,22 +41,22 @@ namespace Database_Dane
           
         private void Importar_Click(object sender, RoutedEventArgs e)
         {
+
+            list.Items.Clear();
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.ShowDialog();
 
             if (openFile.ShowDialog() == true) 
             {
                 string[] line = File.ReadAllLines(openFile.FileName);
-                List<Municipality> municipality = new List<Municipality>();
 
-                foreach (var linea in line) 
+                for (int i = 0; i <= line.Length-6; i++)
                 {
-                    var attributes = linea.Split(',');
-                    municipality.Add(new Municipality(attributes[0], attributes[1], attributes[2], attributes[3], attributes[4]));
+                    var attributes = line[i].Split(',');
+                    municipalityList.Add(new Municipality(attributes[0], attributes[1], attributes[2], attributes[3], attributes[4]));
                 }
 
-                ListViewItem listView = new ListViewItem();
-                list.Items.Add(municipality);
+                municipalityList.RemoveAt(0);
+                list.ItemsSource = municipalityList;
             }
         }
     }
