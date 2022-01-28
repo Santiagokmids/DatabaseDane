@@ -35,11 +35,11 @@ namespace Database_Dane
             list.Items.Clear();
             OpenFileDialog openFile = new OpenFileDialog();
 
-           if (openFile.ShowDialog() == true) 
+            if (openFile.ShowDialog() == true)
             {
                 string[] line = File.ReadAllLines(openFile.FileName);
 
-                for (int i = 0; i <= line.Length-6; i++)
+                for (int i = 0; i <= line.Length - 6; i++)
                 {
                     var attributes = line[i].Split(',');
                     municipalityList.Add(new Municipality(attributes[0], attributes[1], attributes[2], attributes[3], attributes[4]));
@@ -47,6 +47,7 @@ namespace Database_Dane
 
                 municipalityList.RemoveAt(0);
                 list.ItemsSource = municipalityList;
+                MessageBox.Show("La base de datos ha sido importada");
             }
         }
 
@@ -55,19 +56,19 @@ namespace Database_Dane
             Boolean stop = true;
             newPanel.Items.Clear();
 
-          for (int i = 0;i < municipalityList.Count && stop; i++)
+            for (int i = 0; i < municipalityList.Count && stop; i++)
             {
-                if(municipalityList[i].Municipality_Code.Equals(txtCode.Text))
+                if (municipalityList[i].Municipality_Code.Equals(txtCode.Text))
                 {
                     newPanel.Items.Add(municipalityList[i]);
                     stop = false;
                 }
             }
-        }
-
-        private void txtCode_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            if (stop)
+            {
+                MessageBox.Show("El código del Municipio no se encuentra en la base de datos");
+                txtCode.Clear();
+            }
         }
     }
 }
