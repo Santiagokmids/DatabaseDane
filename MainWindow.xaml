@@ -10,7 +10,7 @@
         <Rectangle Fill="#FF3281EC" Margin="-18,10,0,0" Height="110" VerticalAlignment="Top"/>
         <Label Content="DATAM" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Franklin Gothic Heavy" FontSize="72" FontWeight="Normal" Foreground="White"/>
         <Button x:Name="Importar" Content="Importar datos" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Height="51" Width="274" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Importar_Click" ></Button>
-        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=7}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListView_SelectionChanged" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
+        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=8}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListView_SelectionChanged" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
             <ListView.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,7 +20,11 @@
             </ListView.RenderTransform>
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Código Departamento" DisplayMemberBinding="{Binding Departament_Code}"/>
+                    <GridViewColumn Header="Código Municipio" DisplayMemberBinding="{Binding Municipality_Code}" Width="130"/>
+                    <GridViewColumn Header="Nombre Departamento" DisplayMemberBinding="{Binding Departament_Name}" Width="170"/>
+                    <GridViewColumn Header="Nombre Municipio" DisplayMemberBinding="{Binding Municipality_Name}" Width="140"/>
+                    <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding Municipality_Type}" Width="157"/>
                 </GridView>
             </ListView.View>
         </ListView>
