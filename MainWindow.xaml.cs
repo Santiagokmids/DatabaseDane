@@ -34,18 +34,13 @@ namespace Database_Dane
 
         }
 
-        private void Buscar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-          
         private void Importar_Click(object sender, RoutedEventArgs e)
         {
 
             list.Items.Clear();
             OpenFileDialog openFile = new OpenFileDialog();
 
-            if (openFile.ShowDialog() == true) 
+           if (openFile.ShowDialog() == true) 
             {
                 string[] line = File.ReadAllLines(openFile.FileName);
 
@@ -58,6 +53,11 @@ namespace Database_Dane
                 municipalityList.RemoveAt(0);
                 list.ItemsSource = municipalityList;
             }
+        }
+
+        private void Buscar_Click(object sender, RoutedEventArgs e)
+        {
+          
         }
     }
 }

@@ -28,6 +28,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="Buscar" Content="Buscar Municipio" HorizontalAlignment="Left" Margin="542,447,0,0" VerticalAlignment="Top" Height="50" Width="201" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Buscar_Click"/>
+        <Button x:Name="Buscar" Content="Buscar Municipio" HorizontalAlignment="Left" Margin="511,447,0,0" VerticalAlignment="Top" Height="50" Width="201" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Buscar_Click"/>
+        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="124,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356" Height="50" TextAlignment="Center" FontSize="24" TextDecorations="{x:Null}" FontStyle="Normal" FontWeight="Normal" IsEnabled="True" Text="asd" FontFamily="Franklin Gothic Heavy" CharacterCasing="Normal" ClipToBounds="True"/>
     </Grid>
 </Window>
