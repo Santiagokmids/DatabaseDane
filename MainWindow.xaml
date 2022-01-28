@@ -9,8 +9,8 @@
     <Grid HorizontalAlignment="Center" Width="808" Height="710" VerticalAlignment="Top" Margin="0,-10,0,0">
         <Rectangle Fill="#FF3281EC" Margin="-18,10,0,0" Height="110" VerticalAlignment="Top"/>
         <Label Content="DATAM" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Franklin Gothic Heavy" FontSize="72" FontWeight="Normal" Foreground="White"/>
-        <Button x:Name="Importar" Content="Importar datos" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Height="51" Width="274" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5"/>
-        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListView_SelectionChanged" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
+        <Button x:Name="Importar" Content="Importar datos" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Height="51" Width="274" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Importar_Click" ></Button>
+        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=7}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListView_SelectionChanged" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
             <ListView.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
