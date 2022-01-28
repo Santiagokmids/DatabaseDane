@@ -29,11 +29,6 @@ namespace Database_Dane
             InitializeComponent();
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void Importar_Click(object sender, RoutedEventArgs e)
         {
 
@@ -57,7 +52,22 @@ namespace Database_Dane
 
         private void Buscar_Click(object sender, RoutedEventArgs e)
         {
-          
+            Boolean stop = true;
+            newPanel.Items.Clear();
+
+          for (int i = 0;i < municipalityList.Count && stop; i++)
+            {
+                if(municipalityList[i].Municipality_Code.Equals(txtCode.Text))
+                {
+                    newPanel.Items.Add(municipalityList[i]);
+                    stop = false;
+                }
+            }
+        }
+
+        private void txtCode_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
