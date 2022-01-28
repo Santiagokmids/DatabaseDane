@@ -10,7 +10,7 @@
         <Rectangle Fill="#FF3281EC" Margin="-18,10,0,0" Height="110" VerticalAlignment="Top"/>
         <Label Content="DATAM" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Franklin Gothic Heavy" FontSize="72" FontWeight="Normal" Foreground="White"/>
         <Button x:Name="Importar" Content="Importar datos" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Height="51" Width="274" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Importar_Click" ></Button>
-        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=8}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" SelectionChanged="ListView_SelectionChanged" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
+        <ListView x:Name="list" d:ItemsSource="{d:SampleData ItemCount=8}" Margin="31,231,31,292" RenderTransformOrigin="0.5,0.5" Foreground="Black" BorderBrush="#FF5C5D5F" FontFamily="Berlin Sans FB Demi" SelectionMode="Extended">
             <ListView.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,23 +22,23 @@
                 <GridView>
                     <GridViewColumn Header="Código Departamento" DisplayMemberBinding="{Binding Departament_Code}"/>
                     <GridViewColumn Header="Código Municipio" DisplayMemberBinding="{Binding Municipality_Code}" Width="130"/>
-                    <GridViewColumn Header="Nombre Departamento" DisplayMemberBinding="{Binding Departament_Name}" Width="170"/>
-                    <GridViewColumn Header="Nombre Municipio" DisplayMemberBinding="{Binding Municipality_Name}" Width="140"/>
-                    <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding Municipality_Type}" Width="157"/>
+                    <GridViewColumn Header="Nombre Departamento" DisplayMemberBinding="{Binding Departament_Name}" Width="150"/>
+                    <GridViewColumn Header="Nombre Municipio" DisplayMemberBinding="{Binding Municipality_Name}" Width="150"/>
+                    <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding Municipality_Type}" Width="150"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="Buscar" Content="Buscar Municipio" HorizontalAlignment="Left" Margin="494,444,0,0" VerticalAlignment="Top" Height="44" Width="201" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Click="Buscar_Click"/>
-        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="198,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="33" TextAlignment="Center" FontSize="22" TextDecorations="{x:Null}" FontStyle="Normal" FontWeight="Normal" IsEnabled="True" FontFamily="Franklin Gothic Heavy" CharacterCasing="Normal" ClipToBounds="True" UndoLimit="97" TextChanged="txtCode_TextChanged"/>
-        <ListView d:ItemsSource="{d:SampleData ItemCount=1
-            }" Margin="31,502,31,135">
+        <Button x:Name="Buscar" Content="Buscar Municipio" HorizontalAlignment="Left" Margin="484,444,0,0" VerticalAlignment="Top" Height="44" Width="201" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.353,0.478" Click="Buscar_Click"/>
+        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="201,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="32" TextAlignment="Center" FontSize="22" TextDecorations="{x:Null}" FontStyle="Normal" FontWeight="Normal" IsEnabled="True" FontFamily="Franklin Gothic Medium" CharacterCasing="Normal" ClipToBounds="True" UndoLimit="97" TextChanged="txtCode_TextChanged"/>
+        <ListView x:Name="newPanel" d:ItemsSource="{d:SampleData ItemCount=1
+            }" Margin="31,502,31,149">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Código Departamento" DisplayMemberBinding="{Binding }"/>
-                    <GridViewColumn Header="Código Municipio" DisplayMemberBinding="{Binding }"/>
-                    <GridViewColumn Header="Nombre Departamento" DisplayMemberBinding="{Binding }" Width="160"/>
-                    <GridViewColumn Header="Nombre Municipio" DisplayMemberBinding="{Binding }"/>
-                    <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding }" Width="136"/>
+                    <GridViewColumn Header="Código Departamento" DisplayMemberBinding="{Binding Departament_Code}"/>
+                    <GridViewColumn Header="Código Municipio" DisplayMemberBinding="{Binding Municipality_Code}" Width="130"/>
+                    <GridViewColumn Header="Nombre Departamento" DisplayMemberBinding="{Binding Departament_Name}" Width="170"/>
+                    <GridViewColumn Header="Nombre Municipio" DisplayMemberBinding="{Binding Municipality_Name}" Width="150"/>
+                    <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding Municipality_Type}" Width="150"/>
                 </GridView>
             </ListView.View>
         </ListView>
