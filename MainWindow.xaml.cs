@@ -19,7 +19,7 @@ namespace Database_Dane
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {   
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +28,11 @@ namespace Database_Dane
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Buscar_Click(object sender, RoutedEventArgs e)
+        {
+          
         }
     }
 }
