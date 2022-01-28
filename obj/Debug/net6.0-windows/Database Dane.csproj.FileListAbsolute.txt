@@ -19,3 +19,24 @@ C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database D
 C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\ref\Database Dane.dll
 C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.pdb
 C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.genruntimeconfig.cache
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\Database Dane.exe
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\Database Dane.deps.json
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\Database Dane.runtimeconfig.json
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\Database Dane.dll
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\ref\Database Dane.dll
+D:\Users\lumio\visual-workspace\BaseData\bin\Debug\net6.0-windows\Database Dane.pdb
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.csproj.AssemblyReference.cache
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\App.g.cs
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane_MarkupCompile.cache
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane_MarkupCompile.lref
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.g.resources
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.AssemblyInfoInputs.cache
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.AssemblyInfo.cs
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.csproj.CoreCompileInputs.cache
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.dll
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\ref\Database Dane.dll
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.pdb
+D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.genruntimeconfig.cache
