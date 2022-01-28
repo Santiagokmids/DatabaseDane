@@ -56,5 +56,10 @@ namespace Database_Dane
         {
           
         }
+
+        private void txtCode_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
