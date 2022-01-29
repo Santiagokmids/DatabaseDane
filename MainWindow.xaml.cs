@@ -28,6 +28,7 @@ namespace Database_Dane
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Importar_Click(object sender, RoutedEventArgs e)
@@ -67,7 +68,7 @@ namespace Database_Dane
                 {
                     departamentsCount.Add(municipality.Departament_Name, 1);
                 }
-                else
+                else if(municipality.Municipality_Type.Equals("Municipio"))
                 {
                     string depart = municipality.Departament_Name;
                     int count = Int32.Parse(departamentsCount[municipality.Departament_Name] + "");
