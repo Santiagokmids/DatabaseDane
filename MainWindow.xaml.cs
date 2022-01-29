@@ -14,15 +14,16 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
+using LiveCharts;
+using LiveCharts.Wpf;
+using System.Collections;
 
 namespace Database_Dane
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         List<Municipality> municipalityList = new List<Municipality>();
+        Hashtable departamentsCount = new Hashtable();
 
         public MainWindow()
         {
@@ -48,6 +49,31 @@ namespace Database_Dane
                 municipalityList.RemoveAt(0);
                 list.ItemsSource = municipalityList;
                 MessageBox.Show("La base de datos ha sido importada");
+
+                Func<ChartPoint, string> PointLabel = chartPoint =>
+                string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
+
+                DataContext = this;
+                Municipality_Count();
+                Municipios_Loaded();
+            }
+        }
+
+        private void Municipality_Count()
+        {
+            foreach (Municipality municipality in municipalityList)
+            {
+                if (!departamentsCount.ContainsKey(municipality.Departament_Name))
+                {
+                    departamentsCount.Add(municipality.Departament_Name, 1);
+                }
+                else
+                {
+                    string depart = municipality.Departament_Name;
+                    int count = Int32.Parse(departamentsCount[municipality.Departament_Name] + "");
+                    departamentsCount.Remove(depart);
+                    departamentsCount.Add(depart, ++count);
+                }
             }
         }
 
@@ -69,6 +95,53 @@ namespace Database_Dane
                 MessageBox.Show("El código del Municipio no se encuentra en la base de datos");
                 txtCode.Clear();
             }
+        }
+
+        private void Municipios_Loaded()
+        {
+            Func<ChartPoint, string> labelPoint = chartPoint => string.Format("{0}", chartPoint.Y);
+
+            SeriesCollection piechartData = new SeriesCollection { };
+
+            ICollection keys = departamentsCount.Keys;
+
+            int cont = 0;
+            int others = 0;
+
+            foreach (Object depart in keys)
+            {
+                if (cont < 11)
+                {
+                    piechartData.Add(
+                        new PieSeries
+                        {
+                            Title = depart + "",
+                            Values = new ChartValues<double> { Int32.Parse(departamentsCount[depart] + "") },
+                            DataLabels = true,
+                            LabelPoint = labelPoint,
+                        }
+                    );
+                    cont++;
+                }
+                else
+                {
+                    others += Int32.Parse(departamentsCount[depart] + "");
+                }
+            }
+
+            piechartData.Add(
+                new PieSeries
+                {
+                    Title = "Otros",
+                    Values = new ChartValues<double> { others },
+                    DataLabels = true,
+                    LabelPoint = labelPoint,
+                    Fill = System.Windows.Media.Brushes.DeepPink
+                }
+            );
+
+            Municipios.Series = piechartData;
+            Municipios.LegendLocation = LegendLocation.Right;
         }
     }
 }
