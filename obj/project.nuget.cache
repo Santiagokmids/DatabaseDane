@@ -1,19 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "wiZ8AsiCRMcqyxYqtDm9DabUze4utMgJaRnnw0V10M6uEs9cPPOHvy+pnUYoO2gqb13vVjPGCYhzROOLoMfcZw==",
+  "dgSpecHash": "OxX/fRBIICAA8UgMPBxXY/V7rLb0TdknXKLuXYso0EcRU/e3xVuDn/INLRjyxHIBPIItwpcZD9tGQAr113xX3Q==",
   "success": true,
-  "projectFilePath": "D:\\Users\\lumio\\visual-workspace\\BaseData\\Database Dane.csproj",
+  "projectFilePath": "D:\\Users\\lumio\\visual-workspace\\BaseData\\Municipalities_Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché D:\\Users\\lumio\\visual-workspace\\BaseData\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

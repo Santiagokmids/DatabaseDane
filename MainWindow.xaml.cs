@@ -18,7 +18,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using System.Collections;
 
-namespace Database_Dane
+namespace Municipalities_Database
 {
     public partial class MainWindow : Window
     {
@@ -28,12 +28,10 @@ namespace Database_Dane
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void Importar_Click(object sender, RoutedEventArgs e)
         {
-
             list.Items.Clear();
             OpenFileDialog openFile = new OpenFileDialog();
 
