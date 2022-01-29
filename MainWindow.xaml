@@ -29,7 +29,7 @@
             </ListView.View>
         </ListView>
         <Button x:Name="Buscar" Content="Buscar Municipio" HorizontalAlignment="Left" Margin="484,444,0,0" VerticalAlignment="Top" Height="44" Width="201" FontSize="22" FontFamily="Franklin Gothic Heavy" Background="#FF3281EC" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand" RenderTransformOrigin="0.353,0.478" Click="Buscar_Click"/>
-        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="201,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="32" TextAlignment="Center" FontSize="22" TextDecorations="{x:Null}" FontStyle="Normal" FontWeight="Normal" IsEnabled="True" FontFamily="Franklin Gothic Medium" CharacterCasing="Normal" ClipToBounds="True" UndoLimit="97" TextChanged="txtCode_TextChanged"/>
+        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="201,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="32" TextAlignment="Center" FontSize="22" TextDecorations="{x:Null}" FontStyle="Normal" FontWeight="Normal" IsEnabled="True" FontFamily="Franklin Gothic Medium" CharacterCasing="Normal" ClipToBounds="True" UndoLimit="97"/>
         <ListView x:Name="newPanel" d:ItemsSource="{d:SampleData ItemCount=1
             }" Margin="31,502,31,149">
             <ListView.View>
@@ -42,5 +42,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Label Content="Municipios por Departamento" HorizontalAlignment="Center" Margin="0,585,0,0" VerticalAlignment="Top" FontSize="22"/>
     </Grid>
 </Window>

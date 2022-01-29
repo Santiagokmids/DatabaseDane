@@ -48,6 +48,7 @@ namespace Database_Dane
 
                 municipalityList.RemoveAt(0);
                 list.ItemsSource = municipalityList;
+                MessageBox.Show("La base de datos ha sido importada");
             }
         }
 
@@ -64,11 +65,11 @@ namespace Database_Dane
                     stop = false;
                 }
             }
-        }
-
-        private void txtCode_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            if (stop)
+            {
+                MessageBox.Show("El código del Municipio no se encuentra en la base de datos");
+                txtCode.Clear();
+            }
         }
 
     }
