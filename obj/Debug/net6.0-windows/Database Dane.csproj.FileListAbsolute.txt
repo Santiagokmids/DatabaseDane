@@ -40,3 +40,6 @@ D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.
 D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\ref\Database Dane.dll
 D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.pdb
 D:\Users\lumio\visual-workspace\BaseData\obj\Debug\net6.0-windows\Database Dane.genruntimeconfig.cache
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Santiago\source\repos\Database Dane\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\Santiago\source\repos\Database Dane\obj\Debug\net6.0-windows\Database Dane.csproj.CopyComplete
