@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database_Dane
+namespace Municipalities_Database
 {
     internal class Municipality
     {

@@ -1,19 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3BaAt0y1UiOrWUYfJR7KCt3JMCelRLHe6AXedbhWrZyyoRnvY1b1ePFunJi9cYxZSsmiW/JYXI3SjnM3wVw8xQ==",
+  "dgSpecHash": "Q/qelER5GhOtO5JwmFac+qHLKYAGjy8cGPKCQCo7LBHehNK+jpGxp9p3rDVassSxaYnKLybT83yIyWO5AUn4gQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Database Dane.csproj",
+  "projectFilePath": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Municipalities_Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Santiago\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Santiago\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Santiago\\source\\repos\\Database Dane\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

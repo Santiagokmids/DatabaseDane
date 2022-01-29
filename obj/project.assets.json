@@ -79,9 +79,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Database Dane.csproj",
-      "projectName": "Database Dane",
-      "projectPath": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Database Dane.csproj",
+      "projectUniqueName": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Municipalities_Database.csproj",
+      "projectName": "Municipalities_Database",
+      "projectPath": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\Municipalities_Database.csproj",
       "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Santiago\\source\\repos\\Database Dane\\obj\\",
       "projectStyle": "PackageReference",
@@ -144,12 +144,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Santiago\\source\\repos\\Database Dane\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",
